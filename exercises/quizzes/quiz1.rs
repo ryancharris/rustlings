@@ -1,16 +1,11 @@
-// This is a quiz for the following sections:
-// - Variables
-// - Functions
-// - If
-//
-// Mary is buying apples. The price of an apple is calculated as follows:
-// - An apple costs 2 rustbucks.
-// - However, if Mary buys more than 40 apples, the price of each apple in the
-// entire order is reduced to only 1 rustbuck!
+ fn calculate_price_of_apples(num_of_apples: i32) -> i32 {
+     if num_of_apples > 40 {
+         num_of_apples // Each apple costs 1 rustbuck
+     } else {
+         num_of_apples * 2 // Each apple costs 2 rustbucks
+     }
 
-// TODO: Write a function that calculates the price of an order of apples given
-// the quantity bought.
-// fn calculate_price_of_apples(???) -> ??? { ??? }
+ }
 
 fn main() {
     // You can optionally experiment here.
